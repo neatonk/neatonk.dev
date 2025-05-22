@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BookingLink from "./booking-link";
 
 export default function Home() {
   return (
@@ -6,24 +7,22 @@ export default function Home() {
       {/* Header */}
       <header className="w-full max-w-2xl mx-auto px-4 lg:px-0-0 flex flex-col sm:flex-row sm:items-center sm:justify-between py-10 gap-4">
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
-          Kevin Neaton
+          KN
         </h1>
-        <Link
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-auto flex justify-center items-center font-sans font-normal text-base sm:text-lg px-6 py-2 rounded-px bg-foreground text-background hover:opacity-90 transition-colors"
-        >
-          Book a Call
-        </Link>
       </header>
 
       {/* Intro */}
-      <section className="w-full max-w-2xl mx-auto px-4 lg:px-0-0">
-        <p className="text-xl mb-14 font-serif">
-          I'm a software developer focused on building products and solving
-          problems for the web. I also write about topics related to software,
-          technology, and design.
+      <section className="w-full max-w-2xl mx-auto px-4 lg:px-0-0 mb-14 space-y-8">
+        <p className="text-lg/7 font-serif">
+          I’m Kevin—a software developer and consultant creating digital
+          products for the web. I’m also a husband, father, musician, audio
+          engineer, and writer. Here you’ll find my thoughts and essays on
+          software, tech, and creativity.
+        </p>
+        <p className="text-lg/7 font-serif">
+          Have a project in mind?{" "}
+          <BookingLink slug="intro">Book a call</BookingLink>
+          —I’d love to discuss it with you.
         </p>
       </section>
 
