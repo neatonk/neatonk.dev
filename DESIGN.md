@@ -1,33 +1,25 @@
 # Design
 
-Here’s an design specification that grounds the site in the long lineage of developer-essayists while applying today’s best practices in web typography, responsiveness, and accessibility—stripped of all but the essential.
+Here's a design specification that grounds the site in the tradition of developer-essayists, with a focus on clarity, book-like typography, and minimal distraction.
 
 ![Design Mockup](design.png)
 
 ---
 
-## 1. Design Concept Name
+## 1. Visual Intent
 
-**“The Essayist’s Canvas”**
-A reference to a blank page that foregrounds words and ideas.
+- **Tone:** Thoughtful, timeless, book-like.
+- **Purpose:** Provide an uncluttered stage for long-form writing and clear navigation, with zero distractions.
 
-## 2. Visual Intent
+## 2. Color Palette
 
-- **Tone:** Thoughtful, austere, timeless.
-- **Tradition:** In the spirit of Joe Armstrong’s polemics, Paul Graham’s essays, Rich Hickey’s manifestos—places where words carry the weight.
-- **Purpose:** Provide an uncluttered stage for long-form writing and clear navigation between essays, with zero distractions.
+- **Background:** background (white)
+- **Primary Text:** foreground (black)
+- **Link Color:** foreground, underlined by default
+- **Link Hover/Focus:** foreground with opacity-90
+- **Metadata (dates, bylines):** foreground/60 (60% opacity)
 
-## 3. Color Palette
-
-- **Background:** Pure white (#FFFFFF).
-- **Primary Text:** Near-black (#111111) for maximum contrast.
-- **Link Color:** Deep indigo (#2E3A8C), underlined by default.
-- **Link Hover/Focus:** Bright indigo (#4F46E5) with no underline removal.
-- **Metadata (dates, bylines):** Cool gray (#6B7280).
-
-> _Rationale:_ Minimal palette ensures no visual noise—links stand out clearly, text reads like a printed page.
-
-## 4. Typography Choices
+## 3. Typography
 
 1. **Base Font Stack:**
 
@@ -41,24 +33,24 @@ A reference to a blank page that foregrounds words and ideas.
 
 3. **Sizing & Hierarchy:**
 
-   - **H1 (Site title on landing):** 2.5rem (\~40px), line-height 1.2
-   - **H2 (Post titles):** 1.75rem (\~28px), line-height 1.3
-   - **Body:** 1rem (16px), line-height 1.75
-   - **Metadata (date, author):** 0.875rem (14px), line-height 1.5
+   - **H1 (Site title on landing):** text-4xl leading-tight
+   - **H2 (Post titles):** text-2xl leading-snug
+   - **Body:** text-base leading-relaxed
+   - **Metadata (date, author):** text-sm leading-normal
 
 4. **Typographic Features:**
 
-   - **Hyphenation:** Enabled for narrow viewports.
-   - **Text wrap:** Optimal measure (\~65–75 characters).
-   - **Paragraph spacing:** Margin-bottom 1em; no first-paragraph indent.
-   - **Accessible link underlines:** Always underlined, with increased thickness.
+   - **Hyphenation:** Enabled for narrow viewports (`hyphens-auto`), disabled for wider screens (`hyphens-none`).
+   - **Text wrap:** Optimal measure (~65–75 characters) using `max-w-prose`.
+   - **Paragraph spacing:** Margin-bottom 1em (`mb-4`); no first-paragraph indent (`indent-4 first:indent-0`).
+   - **Accessible link underlines:** Always underlined with increased thickness and offset (`underline decoration-2 underline-offset-4`).
 
-## 5. Branding Asset Placement Strategy
+## 4. Branding Asset Placement Strategy
 
-- **Photo:** Omit on landing; instead, use a tiny circular avatar (32px) next to the byline on individual posts—echoing Ward Cunningham’s minimal sidebar style.
+- **Photo:** Omit on landing; instead, use a tiny circular avatar (32px) next to the byline on individual posts.
 - **Logo/Text mark:** Represent yourself by name in the header (H1) on landing; no separate graphic.
 
-## 6. Layout & Composition
+## 5. Layout & Composition
 
 - **Responsive Grid:**
 
@@ -79,7 +71,7 @@ A reference to a blank page that foregrounds words and ideas.
   - **Landing:** H1 → intro blurb → latest posts list.
   - **Post:** Back link → date/author line → H2 title → body text.
 
-## 7. Special Treatments
+## 6. Special Treatments
 
 - **Images:** Only used if integral to an essay; otherwise hidden.
 - **Code Blocks:** Monospaced, 0.9rem, light gray background (#F3F4F6), 1px radius corners, horizontal scroll only when needed.
@@ -89,4 +81,4 @@ A reference to a blank page that foregrounds words and ideas.
 
 ---
 
-This stripped-back, typographically driven design sits squarely alongside the sites of Kay, Cunningham, Armstrong, Graham, Hickey, Victor, Nygard, and Fowler—updated for today’s responsive, accessible web.
+This design is typographically driven, minimal, and responsive, creating an elegant reading experience that prioritizes content over decoration.
