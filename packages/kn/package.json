@@ -6,7 +6,7 @@
     "./kn.svg": "./kn.svg"
   },
   "scripts": {
-    "build:svg": "uv run -s main.py",
+    "build:svg": "if [ \"$VERCEL\" != \"1\" ]; then uv run -s main.py; fi",
     "build:component": "tsx scripts/generate-component.ts",
     "build": "pnpm run build:svg && pnpm run build:component",
     "clean": "rm index.tsx kn.svg; true"
