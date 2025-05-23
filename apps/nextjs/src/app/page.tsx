@@ -14,11 +14,11 @@ export default function Home() {
 
       {/* Intro */}
       <section className="w-full max-w-2xl mx-auto px-4 lg:px-0-0 mb-14 space-y-8">
-        <p className="text-lg/7 font-serif">
-          I’m Kevin—a software developer and consultant creating digital
-          products for the web. I’m also a husband, father, musician, audio
-          engineer, and writer. Here you’ll find my thoughts and essays on
-          software, tech, and creativity.
+        <p className="text-lg/8 font-serif">
+          Welcome! I’m <em>@neatonk</em>—a software developer and consultant
+          creating digital products for the web. I’m also a husband, father,
+          musician, and audio engineer. Here you’ll find my thoughts and essays
+          on software, tech, and creativity.
         </p>
         <p className="text-lg/7 font-serif">
           Have a project in mind?{" "}
