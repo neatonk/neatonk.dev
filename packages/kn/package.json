@@ -1,0 +1,24 @@
+{
+  "name": "@repo/kn",
+  "private": true,
+  "exports": {
+    ".": "./index.tsx",
+    "./kn.svg": "./kn.svg"
+  },
+  "scripts": {
+    "build:svg": "uv run -s main.py",
+    "build:component": "tsx scripts/generate-component.ts",
+    "build": "pnpm run build:svg && pnpm run build:component",
+    "clean": "rm index.tsx kn.svg; true"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+[project]
+name = "kn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.6",
+    "pillow>=11.2.1",
+    "scikit-image>=0.25.2",
+    "svgwrite>=1.4.3",
+]
+
+[project.scripts]
+kn = "main:main"
