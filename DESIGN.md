@@ -1,6 +1,8 @@
 # Design
 
-Here's a design specification that grounds the site in the tradition of developer-essayists, with a focus on clarity, book-like typography, and minimal distraction.
+A thoughtful, book-inspired design system for developer-essayists—minimal,
+timeless, and focused on clarity and immersive reading. Every detail prioritizes
+content and typographic excellence.
 
 ![Design Mockup](design.png)
 
@@ -79,6 +81,23 @@ Here's a design specification that grounds the site in the tradition of develope
 - **Focus Styles:** All interactive elements get a 3px outline in the link hover color.
 - **Print Stylesheet:** Remove navigation, adjust max-width to 700px, black text on white, hide code backgrounds.
 
----
+## 7. Vertical Rhythm Guidelines
 
-This design is typographically driven, minimal, and responsive, creating an elegant reading experience that prioritizes content over decoration.
+To ensure a harmonious and readable layout, use the following vertical rhythm rules throughout the site:
+
+- **H1:**
+  - `mt-8` (2rem top margin)
+  - `mb-6` (1.5rem bottom margin)
+- **H2:**
+  - `mt-8` (2rem top margin)
+  - `mb-4` (1rem bottom margin)
+- **Body text (p):**
+  - `mb-4` (1em or 1rem bottom margin)
+  - No first-paragraph indent (`first:indent-0`)
+- **Section spacing:**
+  - `mt-8` (2rem) before major sections (e.g., before H2)
+  - `mb-4` (1rem) before body text
+- **Lists and other blocks:**
+  - Use `gap-6` or `mb-6` for vertical spacing between items
+- **General:**
+  - Use Tailwind spacing utilities (`mb-4`, `mt-8`, etc.) to maintain consistency
