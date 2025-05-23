@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* Posts: mt-12 for vertical rhythm before H2, mb-6 after H2 */}
-      <section className="w-full max-w-2xl mx-auto px-4 lg:px-0-0 mt-12">
+      {/* <section className="w-full max-w-2xl mx-auto px-4 lg:px-0-0 mt-12">
         <h2 className="text-3xl font-extrabold mb-6">Posts</h2>
         <ul className="flex flex-col gap-6 pl-0 list-none">
           <li>
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </li>
         </ul>
-      </section>
+      </section> */}
 
       {/* Spacer */}
       <div className="flex-1" />
