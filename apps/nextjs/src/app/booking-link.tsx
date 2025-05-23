@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function BookingLink({
@@ -14,7 +15,7 @@ export default function BookingLink({
       href={`https://cal.com/neatonk/${slug}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="underline decoration-2 underline-offset-4"
+      className={cn("underline decoration-2 underline-offset-4", className)}
     >
       {children}
     </Link>

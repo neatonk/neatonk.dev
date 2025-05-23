@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BookingLink from "./booking-link";
 import { Logo } from "@repo/kn";
 
