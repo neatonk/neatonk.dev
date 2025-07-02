@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
 import { ThemeToggle } from "@/components/theme-toggle";
+import Footer from "./footer";
+import Header from "./header";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,7 +42,15 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ThemeToggle className="absolute top-12 md:top-4 right-4 z-50" />
-          {children}
+          <div className="min-h-screen flex flex-col bg-background text-foreground font-serif">
+            {/* Header: H1 at top, margin-bottom: 1.5rem (mb-6) */}
+            <Header />
+            {children}
+            {/* Spacer */}
+            <div className="flex-1" />
+
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

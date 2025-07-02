@@ -122,3 +122,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .markdown-content {
+    @apply text-foreground leading-relaxed;
+  }
+
+  .markdown-content h1 {
+    @apply text-3xl font-bold mt-12 mb-8 text-foreground;
+  }
+
+  .markdown-content h2 {
+    @apply text-2xl font-bold mt-12 mb-6 text-foreground;
+  }
+
+  .markdown-content h3 {
+    @apply text-xl font-bold mt-8 mb-4 text-foreground;
+  }
+
+  .markdown-content p {
+    @apply mb-4 leading-relaxed text-foreground;
+  }
+
+  .markdown-content ul {
+    @apply list-disc ml-6 mb-4;
+  }
+
+  .markdown-content li {
+    @apply mb-2 text-foreground;
+  }
+
+  .markdown-content strong {
+    @apply font-bold text-foreground;
+  }
+
+  .markdown-content em {
+    @apply italic text-foreground;
+  }
+
+  .markdown-content a {
+    @apply text-foreground underline hover:no-underline;
+  }
+}
