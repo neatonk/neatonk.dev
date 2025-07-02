@@ -1,5 +1,4 @@
 import BookingLink from "./booking-link";
-import { Logo } from "@repo/kn";
 
 export default function Home() {
   return (
